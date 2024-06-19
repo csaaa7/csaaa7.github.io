@@ -1,0 +1,3 @@
+- :earth_americas: Translations
+  - [:taiwan: 繁體中文](/)
+  - [:us: English](/en-us/)

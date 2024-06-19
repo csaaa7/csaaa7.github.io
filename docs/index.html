@@ -1,0 +1,120 @@
+<!--
+
+        ／＞　 フ
+        | 　_　_| 
+      ／` ミ＿xノ 
+     /　　　　 |
+    /　 ヽ　　 ﾉ
+    │　　|　|　|
+／￣|　　 |　|　|
+(￣ヽ＿_ヽ_)__)
+＼二)
+
+Author: Phoebus Ho
+
+-->
+
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+  <meta charset="UTF-8">
+  <title>Phoebus</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="icon" href="_media/logo.png"/>
+
+  <!-- docsify-gifcontrol -->
+  <link rel="stylesheet" href="//unpkg.com/docsify-gifcontrol/dist/docsify-gifcontrol.css">
+</head>
+<body>
+
+  <div id="app"></div>
+  <script>    
+    (function () {
+        const lang = location.hash.match(/#\/(en-us|zh-tw)\//);
+
+        // Set html "lang" attribute based on URL
+        if (lang) {
+          document.documentElement.setAttribute('lang', lang[1]);
+        }
+      })();    
+
+    window.$docsify = {          
+    homepage: 'home.md',
+    name: 'About Me',
+         
+    nameLink: {
+      '/en-us/': '#/en-us/',      
+      '/': '#/'
+    },
+
+    loadNavbar: true,
+    loadSidebar: true,      
+    auto2top: true,
+    maxLevel: 6,      
+    subMaxLevel: 4,
+    coverpage: false,  
+    executeScript: true,
+
+    // coverpage: {
+    //   '/en-us/': '_coverpage.md',
+    //   '/': '_coverpage.md'      
+    // },
+
+    notFoundPage: {
+      '/en-us': '/en-us/_404.md',        
+      '/': '_404.md'
+    },
+
+    //  docsify-footer
+    loadFooter: true, 
+
+    //  flexible-alerts
+    'flexible-alerts': {
+      style: 'flat'
+    },
+
+    //  docsify-gifcontrol
+    gifcontrol: {
+      mode: 'auto',        
+      iconColor: 'rgba(66, 185, 131, 0.8)',
+      playIcon: '<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 128 128"><path stroke="null" d="m64,6.1323c-31.96724,0 -57.8677,25.90046 -57.8677,57.8677s25.90046,57.8677 57.8677,57.8677s57.8677,-25.90046 57.8677,-57.8677s-25.90046,-57.8677 -57.8677,-57.8677zm26.99715,63.4678l-41.0674,23.56709c-3.68673,2.05337 -8.33015,-0.58334 -8.33015,-4.90009l0,-48.5342c0,-4.29341 4.62008,-6.95346 8.33015,-4.90009l41.0674,24.96711c3.82674,2.14671 3.82674,7.6768 0,9.80018z"/></svg>',
+    },
+
+    //  docsify-pagination
+    pagination: {
+      crossChapter: true,
+      crossChapterText: true,
+    },
+
+    //  disable cache
+    requestHeaders: {
+      'cache-control': 'max-age=0',
+    },
+  }
+
+  </script>
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+
+  <!-- emoji -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+
+  <!-- flexible-alerts -->
+  <script src="//unpkg.com/docsify-plugin-flexible-alerts"></script>
+
+  <!-- docsify-gifcontrol -->
+  <script src="//unpkg.com/docsify-gifcontrol/dist/docsify-gifcontrol.js"></script>
+
+  <!-- docsify-footer -->
+  <script src="//cdn.jsdelivr.net/npm/@alertbox/docsify-footer/dist/docsify-footer.min.js"></script>
+
+  <!-- docsify-pagination -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+
+  <!-- zoom-image -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+</body>
+</html>
